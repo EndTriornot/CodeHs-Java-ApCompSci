@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class CastingToInt
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a double:");
+        double ddouble = input.nextDouble();
+        System.out.println(ddouble);
+        int iint = (int)ddouble;
+        System.out.println(iint);
+        ddouble += 0.5;
+        System.out.println(ddouble);
+        iint = (int)ddouble;
+        System.out.println(iint);
+    }
+}
