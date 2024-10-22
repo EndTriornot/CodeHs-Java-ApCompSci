@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class NightOut
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("How much does dinner usually cost?");
+        double one = input.nextDouble();
+        System.out.println("How much is laser tag for one person?");
+        double two = input.nextDouble();
+        System.out.println("How much does a triple scoop cost?");
+        double three = input.nextDouble();
+        
+        one = 3*one;
+        two += two;
+        three += three/3;
+        double sum = one + two + three;
+        
+        System.out.println( + one + two + three);
+        System.out.println("Dinner: " + one);
+        System.out.println("Laser Tag: " + two);
+        System.out.println("Ice cream: " + three);
+        System.out.println("Grand Total: $" + sum);
+    }
+}
