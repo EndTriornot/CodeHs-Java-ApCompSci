@@ -1,0 +1,14 @@
+public class WorkShift
+{
+    public static void main(String[] args)
+    {
+        int hoursWorked = 20;
+        int minutesWorked = 42;
+        int secondsWorked = 16;
+        
+        minutesWorked += hoursWorked*60;
+        secondsWorked +=minutesWorked*60;
+        
+        System.out.println("Number of Seconds Worked: " + secondsWorked);
+    }
+}
