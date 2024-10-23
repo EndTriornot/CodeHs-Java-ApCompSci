@@ -1,0 +1,53 @@
+Question: 1
+
+What are parameters?
+
+The formal names given to the data that gets passed into a method.
+
+
+Question: 2
+
+Consider the Circle class below.
+public class Circle
+{
+    private double radius;
+    public Circle(double circleRadius)
+    {
+        radius = circleRadius;
+    }
+    public void setRadius(double newRadius)
+    {
+        radius = newRadius;
+    }
+    public void printDiameter()
+    {
+        double diameter = 2 * radius;
+        System.out.println(diameter);
+    }
+}
+What is the output of the main method below?
+public class MyProgram 
+{
+    public static void main(String[] args)
+    {
+       Circle pizza = new Circle(12);
+       pizza.printDiameter();
+       pizza.setRadius(10);
+       pizza.printDiameter();
+    }
+}
+
+24.0
+20.0
+
+
+Question: 3
+
+Suppose there is a class called Student. One of the methods is given below. It sets the instance variable isHonors to the parameter value.
+public void setHonorStatus(boolean status)
+{
+    isHonors = status;
+}
+Using the Student object called karel, which of the following is the correct way to set karel’s honor status to true?
+
+karel.setHonorStatus(true);
