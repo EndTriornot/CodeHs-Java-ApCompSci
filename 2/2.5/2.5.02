@@ -1,0 +1,61 @@
+Question: 1
+
+The value that a method outputs is called
+
+a return value.
+
+
+Question: 2
+
+Consider the follow class:
+public class Rectangle
+{
+    private int width;
+    private int height;
+    public Rectangle(int rectWidth, int rectHeight)
+    {
+        width = rectWidth;
+        height = rectHeight;
+    }
+    public int getArea()
+    {
+        return width * height;
+    }
+    public int getHeight()
+    {
+        return height;
+    }
+    public int getWidth()
+    {
+        return width;
+    }
+    public String toString()
+    {
+        return "Rectangle with width: " + width + " and height: " + height;
+    }
+}
+If a new variable Rectangle shape = new Rectangle(10, 20); was initialized, what is the correct syntax for retrieving the area of shape?
+
+int area = shape.getArea();
+
+
+Question: 3
+
+Suppose you have a class called Elevator. The Elevator class has a method called goingUp, partially defined below
+public boolean goingUp()
+{
+    // code omitted
+}
+Which of the following statements correctly stores the return value of goingUp when it is called on the Elevator object called hotel?
+
+boolean up = hotel.goingUp();
+
+
+Question: 4
+
+Which of the following methods is implemented correctly with respect to the method’s return type?
+
+public String getColor()
+{
+    return "Red";
+}
