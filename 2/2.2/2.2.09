@@ -1,0 +1,46 @@
+public class PizzaTester 
+{
+    public static void main(String[] args)
+    {
+        Pizza one = new Pizza("Cheese","marinara, cheese",4);
+        Pizza two = new Pizza("Cheese","marinara, cheese",2);
+        Pizza three = new Pizza("Cheese","marinara, cheese",0);
+        
+        System.out.println(one.toString());
+        System.out.println(two.toString());
+        System.out.println(three.toString());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Pizza
+{
+    // Add the instance variables here
+    private String type;
+    private String toppings;
+    private int size;
+    
+    // Put the constructor here
+    public Pizza(String theType, String theToppings, int theSize)
+    {
+        theType = type;
+        theToppings = toppings;
+        theSize = size;
+    }
+    
+    
+    // You don't need to do anything with this method
+    // Used to print the object
+    public String toString()
+    {
+        return size + " inch " + type + " pizza with " + toppings;
+    }
+}
