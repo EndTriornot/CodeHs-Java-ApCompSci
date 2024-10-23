@@ -1,0 +1,60 @@
+Question: 1
+
+Which of the following is NOT part of the constructor signature?
+
+Which instance variables are initialized
+
+
+Question: 2
+
+Which of the following is NOT a valid way to overload this constructor? For brevity, only the signature is given.
+Pineapple(String color)
+
+FancyPineapple(String color, int age)
+
+
+Question: 3
+
+What is the importance of the null value?
+
+null allows a reference variable to be empty and not hold any memory address.
+
+
+Question: 4
+
+A reference variable holds a special value. What is this special value?
+
+The memory address of an object
+
+
+Question: 5
+
+Consider this code snippet that uses a class called Rectangle.
+int roomHeight = 40;
+int roomWidth = roomHeight * 3;
+Rectangle room = new Rectangle(roomHeight, roomWidth);
+Which of the following is a reference variable?
+
+room
+
+
+Question: 6
+
+What does it mean to be a client of a class?
+
+Being a client of a class means that we can use its methods and functionality without necessarily understanding how it works.
+
+
+Question: 7
+
+You are using a class as a client. What would you need to know in order to create an object of the class you intend to use?
+
+You need to know the formal parameters in order to pass in actual parameters.
+
+
+Question: 8
+
+What is the purpose of overloading a class’ constructor?
+
+It allows the user to set the values of different combinations of the instance variables when the object is created.
+
