@@ -1,0 +1,76 @@
+Question: 1
+
+What is an instance method?
+
+An instance method is a piece of code called on a specific instance (an object) of the class.
+
+
+Question: 2
+
+Which of the following is a correctly written method for the class below?
+public class Timer 
+{
+    private int startMin;
+    private int length;
+    public Timer(int minute, int duration)
+    {
+        startMin = minute;
+        length = duration;
+    }
+    public Timer(int duration)
+    {
+        startMin = 0;
+        length = duration;
+    }
+}
+
+public void addFiveMinutes()
+{
+    length = length + 5;
+}
+Question: 3
+
+Which of the following correctly calls the method addFiveMinutes on an object of the Timer class called kitchenTimer?
+
+kitchenTimer.addFiveMinutes();
+
+
+Question: 4
+
+Suppose the class Timer has a method called startTime that prints out the starting time of the Timer.
+Which of the following correctly uses this method to print out the start time of a Timer object called laundry?
+
+laundry.startTime();
+
+
+Question: 5
+
+A Timer class is a class that represents a minute timer. A partial definition of the class is given below.
+public class Timer 
+{
+    private int length;
+    public Timer(int duration)
+    {
+        length = duration;
+    }
+    public void endTime()
+    {
+        System.out.print("The timer will end in " );
+        System.out.print(length);
+        System.out.println(" minutes");
+    }
+    public void addFiveMinutes()
+    {
+        length = length + 5;
+    }
+}
+What is the output of the following main method?
+public static void main(String[] args){
+    Timer muffins = new Timer(30);
+    muffins.endTime();
+    muffins.addFiveMinutes();
+    muffins.endTime();
+}
+
+The timer will end in 30 minutes
+The timer will end in 35 minutes
