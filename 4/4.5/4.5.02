@@ -1,0 +1,82 @@
+Question: 1
+
+Consider the following code snippet. Is count < 5 always true, always false, or sometimes true/sometimes false at point 1?
+int count = 0;
+while (count < 5) 
+{
+     // point 1
+     System.out.println("CodeHS Rocks!");
+     count++;
+}
+
+count < 5 is always true at point 1
+
+
+Question: 2
+
+Consider the following code snippet. Is count < 5 always true, always false, or sometimes true/sometimes false at point 2?
+int count = 0;
+while (count < 5) 
+{
+     System.out.println("CodeHS Rocks!");
+     count++;
+     // point 2
+}
+
+Question: 3
+
+Consider the following code snippet. Is count < 5 always true, always false, or sometimes true/sometimes false at point 3?
+int count = 0;
+while (count < 5) 
+{
+     System.out.println("CodeHS Rocks!");
+     count++;
+}
+// point 3
+
+count < 5 always false at point 3
+
+
+Question: 4
+
+How many times does the following loop iterate?
+// x has been initialized with a positive int value
+int count = 0;
+while (count < x) 
+{
+  count++;
+}
+
+x times
+
+
+Question: 5
+
+How many times does the following loop iterate?
+// x has been initialized with a positive int value
+for (int count = 0; count <= x; count++) 
+{
+    System.out.print("*");
+}
+
+x + 1 times
+
+
+Question: 6
+
+How many times does the following loop execute?
+// x has been initialized with a positive int value greater than 5
+int count = 5;
+while (count < x) 
+{
+    count++;
+}
+
+x - 5 times
+
+
+Question: 7
+
+Why is having efficient algorithms important?
+
+Both 1 and 2.
