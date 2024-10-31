@@ -1,0 +1,3 @@
+The duration of time for each of the runs was 18 milliseconds and 8 milliseconds, respectively.
+The for loop was faster than the while loop.
+The variability in duration is likely due to the number of times the loop runs.
