@@ -1,0 +1,37 @@
+Question: 1
+
+The purpose of specifying a postcondition is to
+
+explain the method’s end result, whether it is a return value or change in an object’s state
+
+
+Question: 2
+
+Good programmers use comments to
+
+Make their code more readable by explaining particular chunks of code
+
+
+Question: 3
+
+What is the output of the following code snippet?
+int x = 8;
+int y = 10;
+// x = y + 10;
+y *=  2;
+/*
+y = x;
+x *= 3;
+*/
+System.out.println("x: " + x);
+System.out.println("y: " + y);
+
+x: 8
+y: 20
+
+
+Question: 4
+
+The purpose of specifying a precondition is to
+
+set the method’s expectations before the method is executed with respect to the parameters or object’s state
