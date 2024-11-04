@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class FractionTester
+{
+    public static void main(String[] args)
+    {
+        // Create objects
+        Scanner input = new Scanner(System.in);
+        Fraction frac1 = new Fraction(1, 2);
+        System.out.println("Enter the numerator: ");
+        int numerator = input.nextInt();
+        System.out.println("Enter the denominator: ");
+        int denominator = input.nextInt();
+        Fraction frac2 = new Fraction(numerator, denominator);
+        int sum1 = (frac1.getNumerator() * frac2.getDenominator() + frac1.getDenominator() * frac2.getNumerator());
+        int sum2 = (frac1.getDenominator() * frac2.getDenominator());
+        Fraction sum = new Fraction(sum1, sum2);
+        System.out.println(frac1.toString() + " + " + frac2.toString() + " = " + sum);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Fraction
+{
+    private int numerator;
+    private int denominator;
+    
+    public Fraction(int numer, int denom)
+    {
+        numerator = numer;
+        denominator = denom;
+    }
+    
+    // Returns the numerator
+    public int getNumerator()
+    {
+        return numerator;
+    }
+    
+    // Returns the denominator
+    public int getDenominator()
+    {
+        return denominator;
+    }
+    
+    
+    // Returns a string representing a fraction
+    // in the form
+    // numerator/denominator
+    public String toString()
+    {
+        return numerator + "/" + denominator;
+    }
+    
+    
+}
