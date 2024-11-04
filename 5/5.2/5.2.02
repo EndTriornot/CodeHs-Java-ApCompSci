@@ -1,0 +1,48 @@
+Question: 1
+
+The Glasses class represents a pair of eyeglasses. One of its instance variables is a Prescription object called script. The Prescription object has instance variables that stores the prescription for the left and right eye.
+Suppose the Glasses constructor was implemented as follows
+    public Glasses(Prescription thePrescription)
+    {
+        script = thePrescription;
+    }
+What is the output of the following code snippet?
+// Create a new Prescription object
+Prescription reading = new Prescription(-1.25, -1.5);
+// Create two new Glasses objects
+Glasses myGlasses = new Glasses(reading);
+Glasses yourGlasses = new Glasses(reading);
+// Mutator for the prescription to change the prescription
+reading.updatePrescription(-1.5, -1.5);
+// Prints the glasses' prescription as
+// (Left Eye, Right Eye) e.g. (-2.0, -2.5)
+myGlasses.printPrescription();
+yourGlasses.printPrescription();
+
+(-1.5, -1.5)
+(-1.5, -1.5)
+
+
+Question: 2
+
+An object’s state is defined by the object’s
+
+instance variables and their values
+
+
+Question: 3
+
+If you do not implement a constructor for your class,
+
+Java creates one for you and gives all instance variables default values
+
+
+Question: 4
+
+The Glasses class represents a pair of eyeglasses. One of its instance variables is a Prescription object called script. The Prescription object has instance variables that stores the prescription for the left and right eye.
+Which of the following constructors for the Glasses class sets the script instance variable correctly? Assume any method calls are valid.
+
+public Glasses(Prescription thePrescription)
+{
+script = new Prescription(thePrescription.getLeft(),thePrescription.getRight());
+}
