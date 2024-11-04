@@ -1,0 +1,36 @@
+Question: 1
+
+What method must a class implement in order to concatenate an object of the class with a String object?
+
+toString
+
+Question: 2
+
+What is the output of the following code snippet?
+String forest = "Amazon Rainforest";
+System.out.println(forest.indexOf('a'));
+System.out.println(forest.indexOf('g'));
+System.out.println(forest.indexOf('n'));
+
+2
+-1
+5
+
+
+Question: 3
+
+What would be printed by the following code snippet?
+String lastName = "Vu";
+String otherLastName = "Lopez";
+int comparison = lastName.compareTo(otherLastName);
+System.out.println(comparison);
+
+A positive number because “Vu” comes after “Lopez” in lexicographical order.
+
+
+Question: 4
+
+Consider the following code snippet. What would the output be?
+
+igh School
+Rydell High School
