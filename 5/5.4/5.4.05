@@ -1,0 +1,55 @@
+public class Messages
+{
+    public static void main(String[] args)
+    {
+        Comment comment1 = new Comment("Alice", "This is a great post!", "2024-11-04");
+        Comment comment2 = new Comment("Bob", "Thanks for sharing this information.", "2024-11-03");
+        
+        System.out.println(comment1);
+        System.out.println(comment2);
+        
+        System.out.println("Comment 1 Poster: " + comment1.getPoster());
+        System.out.println("Comment 1 Text: " + comment1.getText());
+        System.out.println("Comment 1 Date: " + comment1.getDate());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Comment
+{
+    private String poster;
+    private String text;
+    private String date;
+    
+    public Comment(String personPosting, String message, String textDate)
+    {
+        poster = personPosting;
+        text = message;
+        date = textDate;
+    }
+    
+     public String getPoster(){
+        return poster;
+    }
+    
+     public String getText(){
+        return text;
+    }
+    
+    public String getDate(){
+        return date;
+    }
+    
+    public String toString()
+    {
+        return text + "\n--" + poster + "(" + date + ")";
+    }
+}
