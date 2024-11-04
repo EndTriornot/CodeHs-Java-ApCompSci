@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class CYOA
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Introduction: Welcome the user to the adventure and introduce the options
+        // Prompt user for their name and greet them personally
+        
+        // First choice: Choose between Paris or Tokyo as vacation destinations
+        
+        // User Chooses Paris
+            // List two activity options in Paris: Visit the Eiffel Tower or Explore the Louvre Museum
+            // Prompt the user to choose between these two activities
+
+            // User Chooses Eiffel Tower
+                // Describe the Eiffel Tower experience with a unique ending
+                // Add details about viewing Paris from the top and the vibrant atmosphere
+                
+            // User Chooses Louvre Museum
+                // Describe the Louvre experience with a different ending
+                // Add details about famous artworks and iconic exhibits, like the Mona Lisa
+                
+        // User Chooses Tokyo
+            // List two activity options in Tokyo: Visit a Temple or Go Shopping in Shibuya
+            // Prompt the user to choose between these two activities
+
+            // User Chooses Temple
+                // Describe the temple experience with a unique ending
+                // Include details about the peaceful atmosphere, traditions, and ancient history
+                
+            // User Chooses Shopping in Shibuya
+                // Describe the shopping experience with a unique ending
+                // Include details about the vibrant streets, shops, and the bustling crowds
+        
+        // Closing: Thank the user for playing and encourage them to try the adventure again to explore different endings
+    }
+}
