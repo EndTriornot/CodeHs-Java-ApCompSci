@@ -1,0 +1,19 @@
+Question: 1
+
+The return type of an accessor method
+
+must match the type of the instance variable being accessed
+
+
+Question: 2
+
+Which of the following is true?
+
+Primitives are returned by value. Objects are returned by reference.
+
+
+Question: 3
+
+The purpose of an accessor method is
+
+to return the value of an instance variable
