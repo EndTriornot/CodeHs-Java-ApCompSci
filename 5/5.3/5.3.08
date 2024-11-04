@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+public class CYOA
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        // Introduction
+        System.out.println("Welcome to the Ultimate Vacation Planner!");
+        System.out.print("What's your name? ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "! Ready to go on an adventure?");
+        
+        // First choice: Choose between Paris or Tokyo
+        System.out.print("Would you like to travel to Paris or Tokyo? ");
+        String firstChoice = scanner.nextLine();
+        
+        if (firstChoice.toUpperCase().substring(0, 1).equals("P"))
+        {
+            // User Chooses Paris
+            System.out.println("Paris! The city of lights. What would you like to do?");
+            System.out.print("Would you like to visit the Eiffel Tower or explore the Louvre Museum? ");
+            String parisChoice = scanner.nextLine();
+            
+            if (parisChoice.toUpperCase().substring(0, 1).equals("E"))
+            {
+                // User Chooses Eiffel Tower
+                System.out.println("You chose to visit the Eiffel Tower!");
+                System.out.println("You climb to the top, enjoying breathtaking views of Paris as the sun sets.");
+                System.out.println("It's a magical experience, and you capture unforgettable photos of the city.");
+            }
+            else if (parisChoice.toUpperCase().substring(0, 1).equals("L"))
+            {
+                // User Chooses Louvre Museum
+                System.out.println("You chose to explore the Louvre Museum!");
+                System.out.println("You marvel at famous artworks, including the Mona Lisa, and get lost in the world of art.");
+                System.out.println("The museum's grandeur and history leave you in awe.");
+            }
+            else
+            {
+                System.out.println("Invalid choice. Please restart and choose either the Eiffel Tower or the Louvre.");
+            }
+        }
+        else if (firstChoice.toUpperCase().substring(0, 1).equals("T"))
+        {
+            // User Chooses Tokyo
+            System.out.println("Tokyo! A city of vibrant culture and technology. What would you like to do?");
+            System.out.print("Would you like to visit a temple or go shopping in Shibuya? ");
+            String tokyoChoice = scanner.nextLine();
+            
+            if (tokyoChoice.toUpperCase().substring(0, 1).equals("T"))
+            {
+                // User Chooses Temple
+                System.out.println("You chose to visit a traditional temple in Tokyo!");
+                System.out.println("You experience the peaceful atmosphere, beautiful architecture, and ancient rituals.");
+                System.out.println("It's a serene experience that connects you to the rich history of Japan.");
+            }
+            else if (tokyoChoice.toUpperCase().substring(0, 1).equals("S"))
+            {
+                // User Chooses Shopping in Shibuya
+                System.out.println("You chose to go shopping in Shibuya!");
+                System.out.println("The bustling streets, bright lights, and endless shops captivate you.");
+                System.out.println("You find unique souvenirs and experience the modern, energetic side of Tokyo.");
+            }
+            else
+            {
+                System.out.println("Invalid choice. Please restart and choose either a temple or shopping.");
+            }
+        }
+        else
+        {
+            System.out.println("Invalid choice. Please restart and choose either Paris or Tokyo.");
+        }
+
+        // Closing
+        System.out.println("Thank you for using the Ultimate Vacation Planner, " + name + "!");
+        System.out.println("We hope you enjoyed your virtual adventure. Try again to explore different paths!");
+    }
+}
