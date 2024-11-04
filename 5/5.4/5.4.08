@@ -1,0 +1,107 @@
+public class ChefTester
+{
+    public static void main(String[] args)
+    {
+        // Don't modify this part!
+        Meal macaroni = new Meal("Mac N Cheese", "Lunch", 8);
+        Chef alex = new Chef("Alex", "Juniors Cheesecake", macaroni);
+        
+        System.out.println(alex);
+        System.out.println(alex.getMealName());
+        
+        // Create your own Meal and Chef here:
+        Meal toast = new Meal("Toast", "Breakfast", 1);
+        Chef karel = new Chef("Karel", "Chuck E Cheese", toast);
+        
+        System.out.println(karel);
+        System.out.println("Chef's Name: " + karel.getName());
+        System.out.println("Restaurant: " + karel.getRestaurant());
+        System.out.println("Best Meal Name: " + karel.getMealName());
+        System.out.println("Best Meal Servings: " + karel.getMealServings());
+        System.out.println("Best Meal Course: " + karel.getMealCourse());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Meal 
+{
+    private String name;
+    private String course;
+    private int numberOfServings;
+    
+    public Meal(String name, String course, int numberOfServings){
+        this.name = name;
+        this.course = course;
+        this.numberOfServings = numberOfServings;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getCourse(){
+        return course;
+    }
+    
+    public int getNumberOfServings(){
+        return numberOfServings;
+    }
+    
+    public String toString(){
+        return name + " (" + course + ")";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Chef 
+{
+    private String name;
+    private String restaurant;
+    private Meal bestMeal;
+    
+    public Chef(String name, String restaurant, Meal bestMeal){
+        this.name = name;
+        this.restaurant = restaurant;
+        this.bestMeal = bestMeal;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public String getRestaurant(){
+        return restaurant;
+    }
+    
+    public String getMealName(){
+        return bestMeal.getName();
+    }
+    
+    public int getMealServings(){
+        return bestMeal.getNumberOfServings();
+    }
+    
+    public String getMealCourse(){
+        return bestMeal.getCourse();
+    }
+    
+    public String toString(){
+        return "Chef " + name + " works at " + restaurant + " and is best known for " + bestMeal;
+    }
+}
