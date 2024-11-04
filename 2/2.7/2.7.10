@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class WordGameTester
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a word: ");
+        String userWord = input.nextLine();
+        WordGames game = new WordGames(userWord);
+        System.out.println(game.scramble());
+        System.out.println("Enter an integer: ");
+        int idx = input.nextInt();
+        input.nextLine();
+        System.out.println("Enter another word: ");
+        String word = input.nextLine();
+        System.out.println(game.bananaSplit(idx, word));
+        System.out.println("Enter a character: ");
+        String userChar = input.nextLine();
+        System.out.println("Enter another word: ");
+        String word2 = input.nextLine();
+        System.out.println(game.bananaSplit(userChar, word2));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class WordGames
+{
+    private String word;
+    
+    public WordGames(String text)
+    {
+        word = text;
+    }
+    
+    public String scramble()
+    {
+        return word.substring(word.length()/2)
+        + word.substring(0, word.length()/2);
+    }
+    
+    public String bananaSplit(int insertIdx, String insertText)
+    {
+        return word.substring(0, insertIdx) + insertText +
+        word.substring(insertIdx);
+    }
+    
+    public String bananaSplit(String insertChar, String insertText)
+    {
+        return word.substring(0, word.indexOf(insertChar)) +
+        insertText + word.substring(word.indexOf(insertChar));
+    }
+    
+    public String toString()
+    {
+        return "[" + word + "]";
+    }
+}
