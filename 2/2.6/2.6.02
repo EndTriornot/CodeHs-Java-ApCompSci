@@ -1,0 +1,37 @@
+Question: 1
+
+Strings are immutable. This means that
+
+Once a String variable has been assigned a value, the value cannot be modified but the variable can be assigned to a different value.
+
+
+Question: 2
+
+What would be printed by this code snippet?
+String language = "Java";
+String opinion = " is fun!";
+System.out.println(language + opinion);
+
+Java is fun!
+
+
+Question: 3
+
+Which of the following would properly print this quote by Edsger W. Dijkstra (an early pioneer of Computer Science) as shown below?
+"Testing shows the presence, not the absence of bugs"
+--- Edsger W. Dijkstra
+
+System.out.println("\"Testing shows the presence, not the absence of bugs\"");
+System.out.println("--- Edsger W. Dijkstra");
+
+
+Question: 4
+
+Which of the following statements will not compile? You may assume any text in this font is an initialized variable.
+I. “Tilly is ” + age + ” years old”
+II. “My favorite letter is ” + “k”
+III. greeting + name
+IV. “Our team, ” + teamName + ” has ” + numPlayers
+
+
+All of these statements will compile
