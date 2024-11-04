@@ -1,0 +1,53 @@
+import java.util.Scanner; import java.lang.*;
+
+public class ExtremeMain
+{
+    public static void main(String[] args)
+    {
+        Scanner input = new Scanner(System.in);
+        Extremes x = new Extremes();
+        System.out.println("Guess the max value: ");
+        Integer guess = input.nextInt();
+        Integer quotient = x.maxQuotient(guess);
+        System.out.println("You were off by " + quotient);
+        System.out.println("Guess the min value: ");
+        guess = input.nextInt();
+        quotient = x.minQuotient(guess);
+        System.out.println("You were off by " + "-" + quotient);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Extremes 
+{
+    Integer min;
+    Integer max;
+    public Extremes()
+    {
+        min = Integer.MIN_VALUE;
+        max = Integer.MAX_VALUE;
+    }
+    
+    public Integer maxQuotient(Integer number)
+    {
+        return max/number;
+    }
+    
+    public Integer minQuotient(Integer number)
+    {
+        return min/number;
+    }
+    
+    public String toString()
+    {
+        return "[" + min + ", " + max + "]";
+    }
+}
