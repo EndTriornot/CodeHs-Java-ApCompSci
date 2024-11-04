@@ -1,0 +1,53 @@
+public class DragonTester
+{
+    public static void main(String[] args){
+        Dragon dragon1 = new Dragon(5, ">");
+        
+        System.out.println(dragon1);
+        
+        System.out.println("Dragon's Attack: " + dragon1.getAttack());
+        System.out.println("Dragon's Level: " + dragon1.getLevel());
+        
+        System.out.println("Dragon's Fight Output: " + dragon1.fight());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Dragon 
+{
+    private String attack;
+    private int level;
+    
+    public Dragon(int level, String attack){
+        this.level = level;
+        this.attack = attack;
+    }
+    
+    public String getAttack(){
+        return attack;
+    }
+    
+    public int getLevel(){
+        return level;
+    }
+    
+    public String fight(){
+        StringBuilder fightOutput = new StringBuilder();
+        for (int i = 0; i < level; i++) {
+            fightOutput.append(attack);
+        }
+        return fightOutput.toString();
+    }
+    
+    public String toString(){
+        return "Dragon is at level " + level + " and attacks with " + attack;
+    }
+}
