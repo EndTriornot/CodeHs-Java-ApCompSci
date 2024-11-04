@@ -1,0 +1,83 @@
+public class ActivityTracker
+{
+    // Main method: the entry point of the ActivityTracker program
+    public static void main(String[] args)
+    {
+        // Creates a new ActivityLog object named mylog to keep track of miles and hours
+        ActivityLog mylog = new ActivityLog();
+        
+        // Adds 5 miles to the activity log
+        mylog.addMiles(5);
+        
+        // Adds 1 hour to the activity log
+        mylog.addHours(1);
+        
+        // Prints "Total Miles: " followed by the total miles logged so far
+        System.out.print("Total Miles: ");
+        System.out.println(mylog.getMiles());
+        
+        // Stores the current total hours logged in a variable named hoursToday
+        double hoursToday = mylog.getHours();
+        
+        // Adds 1.5 more hours to the log
+        mylog.addHours(1.5);
+        
+        // Adds another 3 hours to the log
+        mylog.addHours(3);
+        
+        // Calculates the increase in hours by subtracting hoursToday from the current hours
+        double increase = mylog.getHours() - hoursToday;
+        
+        // Prints a message showing the increase in hours logged today compared to two days ago
+        System.out.print("There are ");
+        System.out.print(increase);
+        System.out.println(" more hours today than two days ago");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class ActivityLog
+{
+    // Private variables to store the total number of hours and miles
+    private double numHours;
+    private double numMiles;
+    
+    // Constructor initializes the activity log with 0 hours and 0 miles
+    public ActivityLog()
+    {
+        numHours = 0;
+        numMiles = 0;
+    }
+    
+    // Adds a specified number of hours to the total logged hours
+    public void addHours(double hours)
+    {
+        numHours += hours;
+    }
+    
+    // Adds a specified number of miles to the total logged miles
+    public void addMiles(double miles)
+    {
+        numMiles += miles;
+    }
+    
+    // Returns the total miles logged so far
+    public double getMiles()
+    {
+        return numMiles;
+    }
+    
+    // Returns the total hours logged so far
+    public double getHours() 
+    {
+        return numHours;
+    }
+}
