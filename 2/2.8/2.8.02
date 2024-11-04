@@ -1,0 +1,28 @@
+Question: 1
+
+The purpose of a wrapper class is to
+
+“Wrap” a primitive value to convert it to an object
+
+
+Question: 2
+
+Java automatically converts between objects and primitives in the process of autoboxing and unboxing.
+What happens when a Double is unboxed?
+
+A Double is unboxed when it is converted to a primitive value.
+
+
+Question: 3
+
+Java automatically converts between objects and primitives in the process of autoboxing and unboxing.
+What happens when an int is autoboxed?
+
+A int is autoboxed when it is converted to a Integer
+
+
+Question: 4
+
+Which of these is not true about primitives and objects?
+
+A primitive has data and methods associated with it while an object only stores data.
