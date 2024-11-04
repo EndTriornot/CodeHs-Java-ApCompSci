@@ -1,0 +1,76 @@
+public class DragonTester
+{
+    public static void main(String[] args){
+        Dragon dragon1 = new Dragon("Smaug", 60);
+        System.out.println(dragon1);
+        
+        System.out.println("Dragon's Name: " + dragon1.getName());
+        System.out.println("Dragon's Level: " + dragon1.getLevel());
+        System.out.println("Can Dragon Breathe Fire? " + dragon1.isFireBreather());
+        
+        dragon1.attack();
+        
+        dragon1.gainExperience();
+        System.out.println("After gaining experience:");
+        System.out.println(dragon1);
+        System.out.println("Can Dragon Breathe Fire? " + dragon1.isFireBreather());
+        
+        dragon1.attack();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Dragon 
+{
+    private String name;
+    private int level;
+    private boolean canBreatheFire;
+    
+    public Dragon(String name, int level){
+        this.name = name;
+        this.level = level;
+        this.canBreatheFire = level >= 70;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getLevel(){
+        return level;
+    }
+    
+    public boolean isFireBreather(){
+        return canBreatheFire;
+    }
+    
+    public void gainExperience(){
+        level += 10;
+        if (level >= 70) {
+            canBreatheFire = true;
+        }
+    }
+    
+    public void attack(){
+        if (canBreatheFire) {
+            System.out.println(">>>>>>>>>>");
+            System.out.println(">>>>>>>>>>>>>>");
+            System.out.println(">>>>>>>>>>>>>>");
+            System.out.println(">>>>>>>>>>");
+        } else {
+            System.out.println("~ ~ ~");
+        }
+    }
+    
+    public String toString(){
+        return "Dragon " + name + " is at level " + level;
+    }
+}
