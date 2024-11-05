@@ -1,0 +1,96 @@
+public class FractionTester
+{
+    public static void main(String[] args)
+    {
+        // Implement the Fraction class in Fraction.java
+        
+        // Then add code here to test out your Fraction class!
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Fraction {
+    private int numerator;
+    private int denominator;
+    
+    /**
+     * Constructor to create a Fraction with specified numerator and denominator.
+     */
+    public Fraction(int num, int denom) {
+        numerator = num;
+        denominator = denom;
+    }
+    
+    // Accessor for numerator
+    public int getNumerator() {
+        return numerator;
+    }
+    
+    // Accessor for denominator
+    public int getDenominator() {
+        return denominator;
+    }
+    
+    // Mutator for numerator
+    public void setNumerator(int x) {
+        numerator = x;
+    }
+    
+    // Mutator for denominator
+    public void setDenominator(int x) {
+        denominator = x;
+    }
+    
+    // Method to add another fraction to this one
+    public void add(Fraction other) {
+        numerator = numerator * other.getDenominator() + other.getNumerator() * denominator;
+        denominator = denominator * other.getDenominator();
+        simplify();
+    }
+    
+    // Method to subtract another fraction from this one
+    public void subtract(Fraction other) {
+        numerator = numerator * other.getDenominator() - other.getNumerator() * denominator;
+        denominator = denominator * other.getDenominator();
+        simplify();
+    }
+    
+    // Method to multiply this fraction by another fraction
+    public void multiply(Fraction other) {
+        numerator = numerator * other.getNumerator();
+        denominator = denominator * other.getDenominator();
+        simplify();
+    }
+    
+    // Method to simplify the fraction (optional but helpful for accurate results)
+    private void simplify() {
+        int gcd = gcd(numerator, denominator);
+        numerator /= gcd;
+        denominator /= gcd;
+    }
+    
+    // Helper method to calculate the greatest common divisor (GCD)
+    private int gcd(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return Math.abs(a);
+    }
+    
+    /**
+     * toString method to return a string representation of the fraction.
+     */
+    public String toString() {
+        return numerator + " / " + denominator;
+    }
+}
