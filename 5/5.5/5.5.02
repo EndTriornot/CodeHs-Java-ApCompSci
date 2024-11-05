@@ -1,0 +1,26 @@
+Question: 1
+
+The return type of a mutator method
+
+is usually void
+
+
+Question: 2
+
+Which of the following is a benefit of using a mutator method?
+
+Mutator methods can verify the new value is a valid value for the instance variable
+
+
+Question: 3
+
+Which of the following is NOT a characteristic of a mutator?
+
+The method returns the value of an instance variable
+
+
+Question: 4
+
+The purpose of a mutator method is
+
+to safely modify an instance variable
