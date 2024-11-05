@@ -1,0 +1,85 @@
+public class RoutineTester
+{
+    public static void main(String[] args) 
+    {
+        Routine myWeek = new Routine();
+        
+        myWeek.setSchool(8);
+        myWeek.setHobbies(2);
+        myWeek.setFriends(2.5);
+        myWeek.setSleep(8);
+        
+        // Prints the totals for the WHOLE WEEK
+        myWeek.printTotal();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Routine {
+    // Instance variables for daily hours
+    private double school;
+    private double sleep;
+    private double friends;
+    private double hobbies;
+    
+    // Accessor and Mutator for school
+    public double getSchool() {
+        return school;
+    }
+    
+    public void setSchool(double schoolHours) {
+        school = schoolHours;
+    }
+    
+    // Accessor and Mutator for sleep
+    public double getSleep() {
+        return sleep;
+    }
+    
+    public void setSleep(double sleepHours) {
+        sleep = sleepHours;
+    }
+    
+    // Accessor and Mutator for friends
+    public double getFriends() {
+        return friends;
+    }
+    
+    public void setFriends(double friendsHours) {
+        friends = friendsHours;
+    }
+    
+    // Accessor and Mutator for hobbies
+    public double getHobbies() {
+        return hobbies;
+    }
+    
+    public void setHobbies(double hobbiesHours) {
+        hobbies = hobbiesHours;
+    }
+    
+    // Method to print total hours spent on each activity per week and total busy hours
+    public void printTotal() {
+        double weeklySchool = school * 7;
+        double weeklySleep = sleep * 7;
+        double weeklyFriends = friends * 7;
+        double weeklyHobbies = hobbies * 7;
+        
+        double totalBusyHours = weeklySchool + weeklySleep + weeklyFriends + weeklyHobbies;
+        
+        System.out.println("How You Spend Your Week");
+        System.out.println("At School: " + weeklySchool);
+        System.out.println("Sleeping: " + weeklySleep);
+        System.out.println("With Friends: " + weeklyFriends);
+        System.out.println("Doing fun stuff: " + weeklyHobbies);
+        System.out.println("You're busy " + totalBusyHours + " hours a week!");
+    }
+}
