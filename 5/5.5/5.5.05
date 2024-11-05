@@ -1,0 +1,67 @@
+public class RectangleTester
+{
+    public static void main(String[] args)
+    {
+        // Make some objects and print out their
+        // areas and perimeters
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Rectangle {
+    private int width;
+    private int height;
+    
+    /**
+     * Constructor to create a Rectangle with specified width and height.
+     */
+    public Rectangle(int rectWidth, int rectHeight) {
+        width = rectWidth;
+        height = rectHeight;
+    }
+    
+    // Accessor for height
+    public int getHeight() {
+        return height;
+    }
+    
+    // Mutator for height
+    public void setHeight(int newHeight) {
+        height = newHeight;
+    }
+    
+    // Accessor for width
+    public int getWidth() {
+        return width;
+    }
+    
+    // Mutator for width
+    public void setWidth(int newWidth) {
+        width = newWidth;
+    }
+    
+    // Method to calculate the area
+    public int getArea() {
+        return width * height;
+    }
+    
+    // Method to calculate the perimeter
+    public int getPerimeter() {
+        return 2 * (width + height);
+    }
+    
+    /**
+     * This is the toString method. It returns a String representation of the object. 
+     */
+    public String toString() {
+        return "Rectangle width: " + width + ", Rectangle height: " + height;
+    }
+}
