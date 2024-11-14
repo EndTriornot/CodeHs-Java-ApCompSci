@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class FoodRunner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Create three Food objects
+        Food item1 = new Food("Hamburgers", 600);
+        Food item2 = new Food("French Fries", 350);
+        Food item3 = new Food("Coke", 200);
+
+        // Ask for quantities and calculate the total calories
+        int totalCalories = 0;
+
+        // Item 1
+        System.out.println(item1);
+        System.out.print("How many would you like? ");
+        int quantity1 = scanner.nextInt();
+        totalCalories += quantity1 * item1.getCalories();
+
+        // Item 2
+        System.out.println(item2);
+        System.out.print("How many would you like? ");
+        int quantity2 = scanner.nextInt();
+        totalCalories += quantity2 * item2.getCalories();
+
+        // Item 3
+        System.out.println(item3);
+        System.out.print("How many would you like? ");
+        int quantity3 = scanner.nextInt();
+        totalCalories += quantity3 * item3.getCalories();
+
+        // Output the total calories
+        System.out.println("Your meal will have a total of " + totalCalories + " calories.");
+
+        scanner.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Food {
+    // Instance variables
+    private String name;
+    private int calories;
+
+    // Constructor
+    public Food(String name, int calories) {
+        this.name = name;
+        this.calories = calories;
+    }
+
+    // Getter and setter for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Getter and setter for calories
+    public int getCalories() {
+        return calories;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
+    // toString method
+    @Override
+    public String toString() {
+        return name + " have " + calories + " calories.";
+    }
+}
