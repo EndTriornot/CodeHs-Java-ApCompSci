@@ -1,0 +1,52 @@
+public class DistanceTester {
+    public static void main(String[] args) {
+        // Create three Distance objects
+        Distance distance1 = new Distance(5.0);
+        Distance distance2 = new Distance(20.0);
+        Distance distance3 = new Distance(10.0);
+
+        // Convert and print the values
+        System.out.println(distance1.getKilometers() + " km = " + distance1.toMiles() + " miles");
+        System.out.println(distance2.getKilometers() + " km = " + distance2.toLeagues() + " leagues");
+        System.out.println(distance3.getKilometers() + " km (one way) = " + distance3.doubleMiles() + " miles (round trip)");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Distance {
+    // Instance variable
+    private double kilometers;
+
+    // Constructor to initialize kilometers
+    public Distance(double kilometers) {
+        this.kilometers = kilometers;
+    }
+
+    // Method to convert kilometers to miles
+    public double toMiles() {
+        return kilometers / 1.609;
+    }
+
+    // Method to convert kilometers to leagues
+    public double toLeagues() {
+        return kilometers / 5.556;
+    }
+
+    // Method to double the mileage in miles
+    public double doubleMiles() {
+        return toMiles() * 2;
+    }
+
+    // Getter method for kilometers
+    public double getKilometers() {
+        return kilometers;
+    }
+}
