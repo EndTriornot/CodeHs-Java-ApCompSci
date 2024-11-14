@@ -1,0 +1,47 @@
+Question: 1
+
+Each of the methods below can be found in the Rectangle class. Which of the following methods would have access to the parameter object’s private data and methods?
+
+public void copy(Rectangle other)
+
+
+Question: 2
+
+Which of the following types can be permanently modified in a method when it is passed as a parameter to a method?
+
+Any user defined class
+
+
+Question: 3
+
+It is considered good practice to
+
+only modify objects when the method postcondition has specified the modification
+
+
+Question: 4
+
+Suppose you have the following methods defined
+public double increaseWidth(double num){
+        num += 10;
+        return num;
+}
+
+public double increaseWidth(Rectangle rect){
+        double newWidth = rect.getWidth() * 2;
+        rect.setWidth(newWidth);
+
+        return newWidth;
+}
+Consider this code snippet
+double width = 10.5;
+Rectangle room = new Rectangle(10, 15);
+System.out.println(width);
+System.out.println(room);
+increaseWidth(width);
+increaseWidth(room);
+System.out.println(width);
+System.out.println(room);
+Which variable will have a different value the second time it is printed? Assume the toString method of Rectangle prints the rectangle’s dimensions.
+
+room
